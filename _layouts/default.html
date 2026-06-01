@@ -1,0 +1,40 @@
+<!DOCTYPE html> # this starts the html page and states the fact that its modern html type
+<html>
+
+<head>
+  <meta charset="UTF-8"> #allows for the emojis (might change)
+  <title>{{ page.title }}</title> #title for browser tab
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> #connecting to css file
+</head> 
+
+<body>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar"> #side bar links 
+    <h2>Languages of Asia</h2>
+
+    <a href="{{ '/east-asia/' | relative_url }}"> #jeykll code to create reliable website links
+      East Asia
+    </a>
+
+    <a href="{{ '/southeast-asia/' | relative_url }}">
+      Southeast Asia
+    </a>
+
+    <a href="{{ '/south-asia/' | relative_url }}">
+      South Asia
+    </a>
+
+    <a href="{{ '/central-asia/' | relative_url }}">
+      Central Asia
+    </a>
+  </div>
+
+  <!-- MAIN CONTENT --> #where main content gets insereted 
+  <div class="main-content">
+    {{ content }} #formating
+  </div>
+
+</body>
+</html> 
